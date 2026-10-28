@@ -10,9 +10,7 @@ namespace MohawkGame2D
     /// </summary>
     public class Game
     {
-        /// <summary>
-        ///     Setup runs once before the game loop begins.
-        /// </summary>
+        Ship ship = new Ship();
         public void Setup()
         {
             Window.SetSize(800, 600);
@@ -24,7 +22,7 @@ namespace MohawkGame2D
         /// </summary>
         public void Update()
         {
-
+            Window.ClearBackground("#bce9f7");
         }
     }
 
