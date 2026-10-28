@@ -25,6 +25,9 @@ namespace MohawkGame2D
             //Bow, Stern
             Draw.SetFillColor("#7a6548");
             //Draw.Triangle()
+            //draw trapezoid
+            //masts, sails
+            //black flag, with if for movement
 
         }
 

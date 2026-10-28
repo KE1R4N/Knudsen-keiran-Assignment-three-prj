@@ -28,6 +28,13 @@ namespace MohawkGame2D
             Draw.SetFillColor("#5fb1b3");
             Draw.Rectangle(0, 450, 800, 150);
 
+            //for clouds - maybe move them idk thats not priority. keep em here I think
+
+            //call cannon - with if keypress
+            //cannon before ship.
+            //call kraken first or last dont think it matters. - with if key blink
+
+
         }
     }
 
