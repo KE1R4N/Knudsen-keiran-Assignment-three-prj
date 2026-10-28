@@ -23,6 +23,11 @@ namespace MohawkGame2D
         public void Update()
         {
             Window.ClearBackground("#bce9f7");
+            ship.Update();
+
+            Draw.SetFillColor("#5fb1b3");
+            Draw.Rectangle(0, 450, 800, 150);
+
         }
     }
 
