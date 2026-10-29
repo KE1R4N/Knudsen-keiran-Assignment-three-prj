@@ -11,6 +11,8 @@ namespace MohawkGame2D
     public class Game
     {
         Ship ship = new Ship();
+        Cannon cannon = new Cannon();
+        Kraken kraken = new Kraken();
         public void Setup()
         {
             Window.SetSize(800, 600);
@@ -23,7 +25,13 @@ namespace MohawkGame2D
         public void Update()
         {
             Window.ClearBackground("#bce9f7");
+            cannon.Update();
+            
+
             ship.Update();
+
+            kraken.Update();
+            
 
             Draw.SetFillColor("#5fb1b3");
             Draw.Rectangle(0, 450, 800, 150);
@@ -33,6 +41,8 @@ namespace MohawkGame2D
             //call cannon - with if keypress
             //cannon before ship.
             //call kraken first or last dont think it matters. - with if key blink
+
+            
 
 
         }
