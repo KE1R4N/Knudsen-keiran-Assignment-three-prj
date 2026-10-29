@@ -27,10 +27,7 @@ namespace MohawkGame2D
         {
             Window.ClearBackground("#bce9f7");
 
-            
-
             cannon.Update();
-            
 
             ship.Update();
 
@@ -45,18 +42,13 @@ namespace MohawkGame2D
             {
 
                 
-                int x = i * 220;
-                Draw.Ellipse(x, 50, 80, 40);
-                Draw.Ellipse(x + 40, 30, 80, 60);
-                Draw.Ellipse(x + 60, 50, 110, 60);
+                int x = i * 200;
+                Draw.Ellipse(x - 20, 100, 100, 70);
+                Draw.Ellipse(x + 20 , 95, 100, 60);
+                Draw.Ellipse(x , 70, 90, 90);
 
             }
 
-            //for clouds - maybe move them idk thats not priority. keep em here I think
-
-            //call cannon - with if keypress
-            //cannon before ship.
-            //call kraken first or last dont think it matters. - with if key blink
 
 
 
