@@ -20,7 +20,7 @@ namespace MohawkGame2D
 
             if (Input.IsKeyboardKeyPressed(KeyboardKey.Space) == true)
             {
-                speed = 40;
+                speed = 100;
 
             }
 

@@ -30,7 +30,25 @@ namespace MohawkGame2D
             Draw.Quad(50, 380, 120, 390, 120, 410, 50, 400);
             Draw.Circle(80, 450, 20);
 
-            //Masts
+            DrawMast();
+            DrawCannons();
+            DrawSails();
+
+        }
+
+
+
+        public void DrawSails()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                int x = i * 60;
+                Draw.SetFillColor("FCF7EB");
+                Draw.Triangle(x + 145, 250, x + 145, 350, x + 185, 300);
+            }
+        }
+        public void DrawMast()
+        {
             for (int i = 0; i < 3; i++)
             {
                 int x = i * 60;
@@ -38,24 +56,21 @@ namespace MohawkGame2D
                 Draw.Rectangle(x + 135, 250, 10, 160);
 
             }
-
-
-            //Cannons
+        }
+        public void DrawCannons()
+        {
             for (int i = 0; i < 4; i++)
             {
-                
+
                 int x = i * 40;
                 Draw.SetFillColor("#634f34");
                 Draw.Square(x + 135, 420, 20);
                 Draw.SetFillColor("#1e1f1f");
-                Draw.Circle(new Vector2(x + 145, 430), 5); 
-                
+                Draw.Circle(new Vector2(x + 145, 430), 5);
+
             }
-
-            
-            //black flag, with if for movement
-
         }
+
 
     }
 }
