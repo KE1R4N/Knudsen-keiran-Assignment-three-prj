@@ -15,6 +15,7 @@ namespace MohawkGame2D
 
         public void Update()
         {
+            
             //Draw hull
             Draw.SetLineSize(0);
             Draw.SetFillColor("#7a6548");
@@ -29,13 +30,25 @@ namespace MohawkGame2D
             Draw.Quad(50, 380, 120, 390, 120, 410, 50, 400);
             Draw.Circle(80, 450, 20);
 
+            //Masts
+            for (int i = 0; i < 3; i++)
+            {
+                int x = i * 60;
+                Draw.SetFillColor("#403321");
+                Draw.Rectangle(x + 135, 250, 10, 160);
 
-            Draw.SetFillColor("#1e1f1f");
+            }
+
+
+            //Cannons
             for (int i = 0; i < 4; i++)
             {
                 
                 int x = i * 40;
-                Draw.Circle(new Vector2(x, 430), 5); 
+                Draw.SetFillColor("#634f34");
+                Draw.Square(x + 135, 420, 20);
+                Draw.SetFillColor("#1e1f1f");
+                Draw.Circle(new Vector2(x + 145, 430), 5); 
                 
             }
 
