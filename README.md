@@ -3,6 +3,6 @@ For the toy
 
 THE KRAKEN!!!!
 
-Hit <Spacebar> to fire a cannonball.
+Hit <B> Spacebar <B> to fire a cannonball.
 
-Hold the <B> key to make the kraken blink.
+Hold the <B> B <B> key to make the kraken blink.
