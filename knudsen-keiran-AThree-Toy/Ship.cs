@@ -52,7 +52,7 @@ namespace MohawkGame2D
                 
             }
 
-            //Masts, sails
+            
             //black flag, with if for movement
 
         }

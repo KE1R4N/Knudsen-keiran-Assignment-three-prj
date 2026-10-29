@@ -6,7 +6,8 @@ namespace MohawkGame2D
 {
     public class Cannon
     {
-
+        float x = 370;
+        float speed = 0;
         public void Setup()
         {
 
@@ -17,12 +18,18 @@ namespace MohawkGame2D
             Draw.SetFillColor("#1e1f1f");
             Draw.Rectangle(340, 420, 40, 15);
 
-            if (Input.IsKeyboardKeyDown(KeyboardKey.Space))
+            if (Input.IsKeyboardKeyPressed(KeyboardKey.Space) == true)
             {
-                Draw.SetFillColor("#1e1f1f");
-                Draw.Circle(30, 30, 60);
+                speed = 40;
 
             }
+
+            x += Time.DeltaTime * speed;
+
+            Draw.SetFillColor("#1e1f1f");
+            Draw.Circle(x, 428, 6);
+
+            
 
         }
 
